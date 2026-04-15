@@ -1,0 +1,29 @@
+{
+  "description": "cleancode plugin hooks — loads rules on session start and reminds during plan mode",
+  "hooks": {
+    "SessionStart": [
+      {
+        "matcher": "*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash \"${CLAUDE_PLUGIN_ROOT}/hooks/scripts/session-start.sh\"",
+            "timeout": 10
+          }
+        ]
+      }
+    ],
+    "UserPromptSubmit": [
+      {
+        "matcher": "*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash \"${CLAUDE_PLUGIN_ROOT}/hooks/scripts/plan-mode-inject.sh\"",
+            "timeout": 5
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,15 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+*.swp
+
+# Local settings (cleancode convention — per-user overrides never committed)
+.claude/*.local.md
+
+# Cleancode artifacts created in consumer projects (not relevant here, but defensive)
+.cleancode-todo.md
+.cleancode-health.md
