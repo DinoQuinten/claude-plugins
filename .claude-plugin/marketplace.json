@@ -29,7 +29,7 @@
         "source": "github",
         "repo": "DinoQuinten/claude-plugins",
         "path": "system-and-database-design",
-        "ref": "v0.1.0-sdd"
+        "ref": "system-and-database-design/v0.1.0"
       },
       "description": "Architect and database-design coach grounded in DDIA, Fundamentals of Software Architecture, and Kimball's Data Warehouse Toolkit. Produces design docs, Mermaid / Excalidraw / DBML diagrams, and architecture reviews.",
       "version": "0.1.0",
