@@ -35,8 +35,8 @@ The plugin does not knowingly process data from children under 13, and does not 
 
 ## Changes to this policy
 
-If the plugin ever adds behavior that handles user data, this policy will be updated in the same commit, and the change will appear in the repository history at https://github.com/DinoQuinten/cleancode-assistant.
+If the plugin ever adds behavior that handles user data, this policy will be updated in the same commit, and the change will appear in the repository history at https://github.com/DinoQuinten/claude-plugins.
 
 ## Contact
 
-For questions about this policy, open an issue at https://github.com/DinoQuinten/cleancode-assistant/issues.
+For questions about this policy, open an issue at https://github.com/DinoQuinten/claude-plugins/issues.

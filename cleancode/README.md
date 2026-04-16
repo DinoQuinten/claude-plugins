@@ -16,7 +16,7 @@ From Claude Code:
 
 ```
 /plugin marketplace add DinoQuinten/claude-plugins
-/plugin install cleancode@claude-plugins
+/plugin install cleancode@dinoquinten-plugins
 ```
 
 **That's it.** Zero setup — no dependencies, no downloads, no build step.

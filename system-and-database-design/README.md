@@ -24,7 +24,7 @@ From Claude Code:
 
 ```
 /plugin marketplace add DinoQuinten/claude-plugins
-/plugin install system-and-database-design@claude-plugins
+/plugin install system-and-database-design@dinoquinten-plugins
 ```
 
 **That's it.** Zero setup — no dependencies, no downloads, no build step.

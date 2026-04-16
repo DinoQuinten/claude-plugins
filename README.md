@@ -6,8 +6,8 @@ A multi-plugin [Claude Code marketplace](https://docs.claude.com/en/docs/claude-
 
 | Plugin | Version | What it does |
 |---|---|---|
-| [`cleancode`](#cleancode) | `v0.3.0` | 15 plain-language clean-code rules with auto-fix for silent errors, method chains, messy tests, long functions, folder structure, and more |
-| [`system-and-database-design`](#system-and-database-design) | `v0.1.0` | Architect and database-design coach grounded in DDIA, *Fundamentals of Software Architecture*, and Kimball's *Data Warehouse Toolkit* — produces design docs, Mermaid / Excalidraw / DBML diagrams, and architecture reviews |
+| [`cleancode`](#cleancode) | `v0.3.2` | 15 plain-language clean-code rules with auto-fix for silent errors, method chains, messy tests, long functions, folder structure, and more |
+| [`system-and-database-design`](#system-and-database-design) | `v0.1.1` | Architect and database-design coach grounded in DDIA, *Fundamentals of Software Architecture*, and Kimball's *Data Warehouse Toolkit* — produces design docs, Mermaid / Excalidraw / DBML diagrams, and architecture reviews |
 
 ## Install
 
@@ -20,8 +20,15 @@ From Claude Code, add the marketplace once:
 Then install either (or both) plugins:
 
 ```
-/plugin install cleancode@claude-plugins
-/plugin install system-and-database-design@claude-plugins
+/plugin install cleancode@dinoquinten-plugins
+/plugin install system-and-database-design@dinoquinten-plugins
+```
+
+For Codex CLI users, install the downstream rule packs directly in a project:
+
+```
+npx cleancode-codex init
+npx sdd-codex init
 ```
 
 ---
@@ -60,7 +67,7 @@ Based on: *Clean Code: A Handbook of Agile Software Craftsmanship* (Robert C. Ma
 
 **Also available for Codex CLI.** The same 15 rules ship as a Codex CLI installer — run `npx cleancode-codex init` in any project to write `AGENTS.md` and `.cleancode-rules.md`. See [`codex/README.md`](./codex/README.md).
 
-Full details, rule list, language support, and troubleshooting live in the plugin's own docs at [tag `v0.3.0`](https://github.com/DinoQuinten/claude-plugins/blob/v0.3.0/README.md).
+Full details, rule list, language support, and troubleshooting live in the plugin's own docs at [tag `cleancode/v0.3.2`](https://github.com/DinoQuinten/claude-plugins/blob/cleancode/v0.3.2/README.md).
 
 ---
 
@@ -83,6 +90,8 @@ A Claude Code plugin that helps you design real-world software architecture and 
 | **Design Principles** | *(auto-triggered)* | Kicks in when you mention CAP, consistency, sharding, consensus, etc. |
 
 A lightweight `SessionStart` hook announces the plugin at the start of each session.
+
+**Also available for Codex CLI.** The design-principles subset ships as a Codex CLI installer — run `npx sdd-codex init` in any project to write `AGENTS.md` and `.sdd-principles.md`. See [`codex-sdd/README.md`](./codex-sdd/README.md).
 
 Full details in [`system-and-database-design/README.md`](./system-and-database-design/README.md).
 
