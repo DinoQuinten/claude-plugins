@@ -8,8 +8,8 @@
     {
       "name": "cleancode",
       "source": {
-        "source": "github",
-        "repo": "DinoQuinten/claude-plugins",
+        "source": "git-subdir",
+        "url": "DinoQuinten/claude-plugins",
         "path": "cleancode",
         "ref": "cleancode/v0.3.2"
       },
@@ -27,8 +27,8 @@
     {
       "name": "system-and-database-design",
       "source": {
-        "source": "github",
-        "repo": "DinoQuinten/claude-plugins",
+        "source": "git-subdir",
+        "url": "DinoQuinten/claude-plugins",
         "path": "system-and-database-design",
         "ref": "system-and-database-design/v0.1.1"
       },
