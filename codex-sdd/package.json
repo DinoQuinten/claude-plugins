@@ -1,9 +1,11 @@
 {
-  "name": "cleancode-codex",
-  "version": "0.3.2",
-  "description": "Codex CLI installer for the 15 clean code rules.",
+  "name": "sdd-codex",
+  "version": "0.1.0",
+  "description": "Codex CLI installer for system and database design guidance.",
   "type": "module",
-  "bin": "./bin/cleancode-codex.js",
+  "bin": {
+    "sdd-codex": "./bin/cli.js"
+  },
   "scripts": {
     "sync-rules": "node scripts/sync-rules.js",
     "test": "node --test test/cli.test.js"
@@ -22,7 +24,7 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/DinoQuinten/claude-plugins.git",
-    "directory": "codex"
+    "directory": "codex-sdd"
   },
   "homepage": "https://github.com/DinoQuinten/claude-plugins#readme"
 }
