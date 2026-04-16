@@ -1,6 +1,6 @@
 {
   "name": "system-and-database-design",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Architect and database-design coach. Grounds Claude in Designing Data-Intensive Applications, Fundamentals of Software Architecture, and Kimball's Data Warehouse Toolkit, and produces design docs, Mermaid / Excalidraw / DBML diagrams, and architecture reviews.",
   "author": {
     "name": "Prasanna Anthony",
