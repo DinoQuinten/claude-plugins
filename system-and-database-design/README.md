@@ -1,4 +1,6 @@
-# system-and-database-design
+# system-and-database-design (`sdd`)
+
+> **Plugin namespace:** `sdd`. Install as `sdd@dinoquinten-plugins`; all commands use the `/sdd:` prefix. The folder and long title `system-and-database-design` stay for discoverability.
 
 A Claude Code plugin that helps you design real-world software architecture and databases. It ships with 39 curated reference chunks distilled from three canonical texts:
 
@@ -10,10 +12,10 @@ A Claude Code plugin that helps you design real-world software architecture and 
 
 ## What it gives you
 
-- `/system-and-database-design:design-system <requirement>` — full design doc with components, trade-offs, capacity math
-- `/system-and-database-design:design-database <domain>` — schema recommendation (SQL or NoSQL) with ER-style breakdown
-- `/system-and-database-design:review-architecture <path or text>` — critique via fitness functions and checklists (scale, security, reliability, compliance, anti-patterns)
-- `/system-and-database-design:diagram <desc> --format=mermaid|excalidraw|dbml` — generates diagrams in your tool of choice
+- `/sdd:design-system <requirement>` — full design doc with components, trade-offs, capacity math
+- `/sdd:design-database <domain>` — schema recommendation (SQL or NoSQL) with ER-style breakdown
+- `/sdd:review-architecture <path or text>` — critique via fitness functions and checklists (scale, security, reliability, compliance, anti-patterns)
+- `/sdd:diagram <desc> --format=mermaid|excalidraw|dbml` — generates diagrams in your tool of choice
 - Auto-triggering `design-principles` skill — kicks in when you mention CAP, consistency, sharding, consensus, etc.
 
 A lightweight `SessionStart` hook announces the plugin at the start of every session so you know it's available.
@@ -24,7 +26,7 @@ From Claude Code:
 
 ```
 /plugin marketplace add DinoQuinten/claude-plugins
-/plugin install system-and-database-design@dinoquinten-plugins
+/plugin install sdd@dinoquinten-plugins
 ```
 
 **That's it.** Zero setup — no dependencies, no downloads, no build step.
@@ -48,10 +50,10 @@ system-and-database-design/
 ├── .claude-plugin/plugin.json
 ├── hooks/hooks.json              # SessionStart banner
 ├── skills/
-│   ├── design-system/            # /system-and-database-design:design-system
-│   ├── design-database/          # /system-and-database-design:design-database
-│   ├── review-architecture/      # /system-and-database-design:review-architecture
-│   ├── diagram/                  # /system-and-database-design:diagram
+│   ├── design-system/            # /sdd:design-system
+│   ├── design-database/          # /sdd:design-database
+│   ├── review-architecture/      # /sdd:review-architecture
+│   ├── diagram/                  # /sdd:diagram
 │   └── design-principles/        # auto-triggered on CAP/ACID/sharding/etc.
 └── README.md
 ```

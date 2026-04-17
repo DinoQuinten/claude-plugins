@@ -7,7 +7,7 @@ A multi-plugin [Claude Code marketplace](https://docs.claude.com/en/docs/claude-
 | Plugin | Version | What it does |
 |---|---|---|
 | [`cleancode`](#cleancode) | `v0.3.2` | 15 plain-language clean-code rules with auto-fix for silent errors, method chains, messy tests, long functions, folder structure, and more |
-| [`system-and-database-design`](#system-and-database-design) | `v0.1.1` | Architect and database-design coach grounded in DDIA, *Fundamentals of Software Architecture*, and Kimball's *Data Warehouse Toolkit* — produces design docs, Mermaid / Excalidraw / DBML diagrams, and architecture reviews |
+| [`sdd`](#sdd-system-and-database-design) *(system-and-database-design)* | `v0.2.0` | Architect and database-design coach grounded in DDIA, *Fundamentals of Software Architecture*, and Kimball's *Data Warehouse Toolkit* — produces design docs, Mermaid / Excalidraw / DBML diagrams, and architecture reviews |
 
 ## Install
 
@@ -21,7 +21,7 @@ Then install either (or both) plugins:
 
 ```
 /plugin install cleancode@dinoquinten-plugins
-/plugin install system-and-database-design@dinoquinten-plugins
+/plugin install sdd@dinoquinten-plugins
 ```
 
 For Codex CLI users, install the downstream rule packs directly in a project:
@@ -71,7 +71,9 @@ Full details, rule list, language support, and troubleshooting live in the plugi
 
 ---
 
-## `system-and-database-design`
+## `sdd` (system-and-database-design)
+
+Installed as `sdd@dinoquinten-plugins`; all commands use the `/sdd:` prefix. Folder name and full descriptive title remain `system-and-database-design` — only the plugin namespace is shortened.
 
 A Claude Code plugin that helps you design real-world software architecture and databases. Ships with 39 curated reference chunks distilled from three canonical texts:
 
@@ -83,10 +85,10 @@ A Claude Code plugin that helps you design real-world software architecture and 
 
 | Skill | Command | What it does |
 |---|---|---|
-| **Design System** | `/system-and-database-design:design-system <requirement>` | Full design doc with components, trade-offs, and capacity math |
-| **Design Database** | `/system-and-database-design:design-database <domain>` | Schema recommendation (SQL or NoSQL) with ER-style breakdown |
-| **Review Architecture** | `/system-and-database-design:review-architecture <path or text>` | Critique via fitness functions and checklists (scale, security, reliability, compliance, anti-patterns) |
-| **Diagram** | `/system-and-database-design:diagram <desc> --format=mermaid\|excalidraw\|dbml` | Generates diagrams in your tool of choice |
+| **Design System** | `/sdd:design-system <requirement>` | Full design doc with components, trade-offs, and capacity math |
+| **Design Database** | `/sdd:design-database <domain>` | Schema recommendation (SQL or NoSQL) with ER-style breakdown |
+| **Review Architecture** | `/sdd:review-architecture <path or text>` | Critique via fitness functions and checklists (scale, security, reliability, compliance, anti-patterns) |
+| **Diagram** | `/sdd:diagram <desc> --format=mermaid\|excalidraw\|dbml` | Generates diagrams in your tool of choice |
 | **Design Principles** | *(auto-triggered)* | Kicks in when you mention CAP, consistency, sharding, consensus, etc. |
 
 A lightweight `SessionStart` hook announces the plugin at the start of each session.

@@ -20,10 +20,10 @@
       "keywords": ["clean-code", "oop", "code-quality", "refactoring", "teaching", "interfaces", "readable", "tech-debt", "design-patterns", "testing", "health-check", "fail-fast", "folder-structure", "module-cohesion"]
     },
     {
-      "name": "system-and-database-design",
+      "name": "sdd",
       "source": "./system-and-database-design",
-      "description": "Architect and database-design coach grounded in DDIA, Fundamentals of Software Architecture, and Kimball's Data Warehouse Toolkit. Produces design docs, Mermaid / Excalidraw / DBML diagrams, and architecture reviews.",
-      "version": "0.1.1",
+      "description": "system-and-database-design — architect and database-design coach grounded in DDIA, Fundamentals of Software Architecture, and Kimball's Data Warehouse Toolkit. Produces design docs, Mermaid / Excalidraw / DBML diagrams, and architecture reviews.",
+      "version": "0.2.0",
       "author": {
         "name": "Prasanna Anthony",
         "url": "https://github.com/DinoQuinten"
